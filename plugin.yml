@@ -1,0 +1,5 @@
+name: RestartMe
+author: Infernus101
+main: RestartMe\Main
+version: 1.0.0
+api: [ 3.4.0, 4.0.0 ]
