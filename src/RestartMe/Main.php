@@ -11,7 +11,7 @@ class Main extends PluginBase
 
     public const FT_PREFIX = "§a§l[§bFT§a]>§r§c ";
 
-    private static Main $object;
+    private static ?Main $object = null;
 
     public int $rtime = 0;
 
