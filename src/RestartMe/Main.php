@@ -37,7 +37,7 @@ class Main extends PluginBase
 
     private function initialize(): void
     {
-        $this->rtime = $this->getConfig()->get("restart-time") * 60;
+        $this->rtime = $this->getConfig()->get("restart-time", 60) * 60;
         $this->getScheduler()->scheduleRepeatingTask(new SecondTask($this), 20);
     }
 
