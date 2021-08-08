@@ -29,9 +29,9 @@ class SecondTask extends Task
         $rtime = $this->plugin->rtime;
         if ($rtime <= 10 && $rtime > 0) {
             $extra = ($rtime !== 1) ? "s" : "";
-            $this->plugin->getServer()->broadcastMessage(Main::FT_PREFIX . TextFormat::GREEN . "Server restarting in " . TextFormat::RED . "{$rtime} " . TextFormat::GREEN . "second" . $extra . "...");
+            $this->plugin->getServer()->broadcastMessage(Main::PREFIX . TextFormat::GREEN . "Server restarting in " . TextFormat::RED . "{$rtime} " . TextFormat::GREEN . "second" . $extra . "...");
         } elseif ($rtime === 60) {
-            $this->plugin->getServer()->broadcastMessage(Main::FT_PREFIX . TextFormat::RED . "Server is going to restart in 1 minute...!");
+            $this->plugin->getServer()->broadcastMessage(Main::PREFIX . TextFormat::RED . "Server is going to restart in 1 minute...!");
         } elseif ($rtime <= 0) {
             $this->plugin->getServer()->shutdown();
         }

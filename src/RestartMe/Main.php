@@ -9,7 +9,7 @@ use RestartMe\task\SecondTask;
 class Main extends PluginBase
 {
 
-    public const FT_PREFIX = "§a§l[§bFT§a]>§r§c ";
+    public const PREFIX = "§a§l[§bRestart§a]>§r§c ";
 
     private static ?Main $object = null;
 

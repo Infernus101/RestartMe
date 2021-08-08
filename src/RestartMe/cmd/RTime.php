@@ -13,7 +13,7 @@ class RTime extends BaseCommand
         parent::__construct($plugin, "rtime", "Time left for a auto restart");
     }
 
-    public function execute(CommandSender $sender, string $commandLabel, array $args)
+    public function execute(CommandSender $sender, string $commandLabel, array $args): void
     {
         if (isset($args[0])) {
             $this->sendUsage($sender);

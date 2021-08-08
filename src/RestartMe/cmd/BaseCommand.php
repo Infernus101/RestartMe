@@ -77,7 +77,7 @@ abstract class BaseCommand extends Command implements PluginIdentifiableCommand
      */
     public function sendMessage(CommandSender $sender, string $message): void
     {
-        $sender->sendMessage(Main::FT_PREFIX . TextFormat::GOLD . $message);
+        $sender->sendMessage(Main::PREFIX . TextFormat::GOLD . $message);
     }
 
 }
